@@ -1,0 +1,11 @@
+html {
+  font-size: clamp(16px, (1rem + 5vw), 50px);
+}
+
+.header__title {
+  padding: clamp(2rem, 10vmax, 10rem) 1rem;
+}
+
+.header__logo {
+  width: clamp(7vw, 10vw, 15vw);
+}
