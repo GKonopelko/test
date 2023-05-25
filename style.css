@@ -1,11 +1,138 @@
 html {
-  font-size: clamp(16px, (1rem + 5vw), 50px);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(18px, (7vw), 20px);
+  color: rgba(0, 47, 108, 1);
+  text-align: center;
 }
 
-.header__title {
-  padding: clamp(2rem, 10vmax, 10rem) 1rem;
+body {
+  height: 100%;
+  width: 95%;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* header */
+
+.header {
+  max-height: 20vw;
+  text-decoration: none;
+  width: 90%;
 }
 
 .header__logo {
-  width: clamp(7vw, 10vw, 15vw);
+  max-width: 90%;
+}
+
+.logo__wrapper {
+  cursor: default;
+}
+
+/* main */
+
+.main {
+  flex: 1 1 auto;
+}
+
+/* promo */
+
+.location__link,
+.location__text {
+  display: inline-block;
+  text-decoration: none;
+  color: rgba(0, 47, 108, 1);
+  font-weight: normal;
+}
+
+/* menu */
+
+.menu ul {
+  list-style: none;
+}
+
+li {
+  color: rgba(0, 47, 108, 1);
+  cursor: pointer;
+  height: 1.7rem;
+  width: max-content;
+  font-weight: bold;
+  font-size: large;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin: auto;
+}
+
+li:hover,
+li:focus {
+  text-shadow: 1px 1px 0px rgba(0, 47, 108, 0.2);
+  transform: translate(-0.1rem, -0.1rem);
+  text-decoration: underline;
+}
+
+li:active {
+  transform: translate(0.05rem, 0.05rem);
+  /* text-shadow: 1px 1px 0px rgba(0, 47, 108, 1); */
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.main-page {
+  display: none;
+}
+
+/* footer */
+
+/* buttons */
+
+/* Reset button styles */
+button {
+  /* padding: 0; */
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  height: fit-content;
+}
+
+.button {
+  color: rgba(0, 47, 108, 1);
+  cursor: pointer;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: large;
+  border: 1px solid rgba(0, 47, 108, 0.6);
+}
+
+.menu,
+.button__language {
+  border: hidden;
+}
+
+.button:hover,
+.button:focus {
+  border: thin solid rgba(0, 47, 108, 0.4);
+  box-shadow: 4px 2px 2px rgba(0, 47, 108, 0.8);
+  transform: translate(-0.1rem, -0.1rem);
+}
+
+.button:active {
+  transform: translate(0.1rem, 0.1rem);
+  border-color: rgba(0, 47, 108, 1);
+  box-shadow: none;
+}
+
+.menu__icon {
+  width: 2rem;
+  height: 2rem;
 }
