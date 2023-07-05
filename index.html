@@ -14,8 +14,8 @@
   </head>
   <body class="body">
     <div class="wrapper">
-      <div class="container">
-        <div class="header block">
+      <div class="header block">
+        <div class="container">
           <header class="header__row">
             <div class="header__logo">
               <img class="img" src=".\src\images\parrotsvg.svg" alt="logo" />
@@ -36,7 +36,96 @@
             </div>
           </header>
         </div>
-        <div class="breadcrumbs block">
+      </div>
+      <div class="menu block">
+        <div class="container">
+          <input class="menu__input" type="checkbox" id="menu__input" />
+          <label class="menu__label"  for="menu__input">
+            <div class="hamburger__button footer__item">
+              <span class="menu__label-line" id="sidebar"></span>
+            </div>
+          </label>
+          <nav class="nav__menu">
+            <div class="container">
+              <div class="nav__container">
+                <div class="nav__item item1">
+                  <div class="nav__home">
+                    <a class="link" href="">
+                      <svg width="44" height="43" class= "link" viewBox="0 0 44 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M36.8694 16.6871L22.7248 1.88155C22.331 1.46926 21.6726 1.46926 21.2787 1.88155L7.13412 16.6871V40.1247C7.13412 40.677 7.58183 41.1247 8.13412 41.1247H16.7912C17.3435 41.1247 17.7912 40.677 17.7912 40.1247V27.9191C17.7912 27.3668 18.239 26.9191 18.7912 26.9191H25.3877C25.94 26.9191 26.3877 27.3668 26.3877 27.9191V40.1247C26.3877 40.677 26.8354 41.1247 27.3877 41.1247H35.8694C36.4217 41.1247 36.8694 40.677 36.8694 40.1247V16.6871Z" fill="white"/>
+                        <path d="M2.00177 22.0593L7.13412 16.6871M42.0018 22.0593L36.8694 16.6871M36.8694 16.6871L22.7248 1.88155C22.331 1.46926 21.6726 1.46926 21.2787 1.88155L7.13412 16.6871M36.8694 16.6871V40.1247C36.8694 40.677 36.4217 41.1247 35.8694 41.1247H27.3877C26.8355 41.1247 26.3877 40.677 26.3877 40.1247V27.9191C26.3877 27.3668 25.94 26.9191 25.3877 26.9191H18.7912C18.239 26.9191 17.7912 27.3668 17.7912 27.9191V40.1247C17.7912 40.677 17.3435 41.1247 16.7912 41.1247H8.13412C7.58183 41.1247 7.13412 40.677 7.13412 40.1247V16.6871" stroke="#002F6C" stroke-width="3"/>
+                        </svg>
+                    </a>
+                  </div>                        
+                </div>
+                <div class="nav__item item2">
+                  <a class="link" href=""><span class="short">Письменный</span><span class="long">Письменный перевод</span></a>
+                  <input type="checkbox" id="checkbox1" />
+                  <label for="checkbox1"> <span class="label-symbol">
+                    &#8249
+                  </span>  </label>
+                  <ul>
+                    <li><a class="link"  href="">Перевод документов</a></li>
+                    <li><a class="link" href="">Заверенный перевод</a></li>
+                    <li><a class="link"  href="">Тематика перевода</a></li>
+                    <li><a class="link" href="">Срочный перевод</a></li>
+                  </ul>
+                </div>
+                <div class="nav__item item3">
+                  <a class="link" href=""><span class="short">Устный</span><span class="long">Устный перевод</span></a>
+                  <input type="checkbox" id="checkbox2" />
+                  <label for="checkbox2"> <span class="label-symbol">
+                    &#8249
+                  </span>  </label>
+                  <ul>
+                    <li><a class="link"  href="">Последовательный перевод</a></li>
+                    <li><a class="link" href="">Дистанционный перевод</a></li>
+                    <li><a class="link" href="">Синхронный перевод</a></li>
+                  </ul>
+                </div>
+                <div class="nav__item item4">
+                  <a class="link" href="">Цена</a>
+                </div>
+                <div class="nav__item item5">
+                  <a class="link" href="">Контакты</a>
+                </div>
+                <div class="nav__item item6">
+                  <a class="link" href=""><span class="short">Бюро</span><span class="long">Бюро финских переводов</span></a>
+                  <input type="checkbox" id="checkbox3" />
+                  <label for="checkbox3"> <span class="label-symbol">
+                    &#8249
+                  </span>  </label>
+                  <ul>
+                    <li><a class="link"  href="">Языки перевода</a></li>
+                    <li><a class="link" href="">Резюме переводчика</a></li>
+                    <li><a class="link"  href="">Клиенты</a></li>
+                    <li><a class="link" href="">Часто задаваемые вопросы</a></li>
+                    <li><a class="link"  href="">О финском языке</a></li>
+                    <li><a class="link" href="">Обучение финскому языку</a></li>
+                    <li><a class="link" href="">Карта сайта</a></li>
+                  </ul>
+                </div>
+                <div class="nav__item item7">
+                  <div class="nav__contacts">
+                    <p class="header__phone">
+                      <a href="tel:+79117770297" class="link"> +7 911 777 0297</a>
+                    </p>
+                    <p class="header__email">
+                      <a href="mailto:grigori@konopelko.com" class="link">
+                        grigori@konopelko.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </nav>
+
+        </div>
+      </div>
+      <div class="breadcrumbs block">
+        <div class="container">
           <ul class="breadcrumb">
             <li class="breadcrumb__item">
               <a class="link" href="#">Бюро финских переводов</a>
@@ -48,15 +137,23 @@
               <a class="link" href="#">Перевод документов</a>
             </li>
           </ul>
+
+
         </div>
-        <div class="title block">
+      </div>
+      <div class="title block">
+        <div class="container">
           <h1 class="article__title">
             Качественный перевод <br />
             на финский язык и <br />
             с финского языка
           </h1>
+
         </div>
-        <div class="promo block">
+      </div>
+      <div class="promo block">
+        <div class="container">
+
           <h4 class="promo__text">
             письменный от 4 руб/слово
             <br />
@@ -71,8 +168,11 @@
               <br />
             </a>
           </h4>
+
         </div>
-        <div class="subtitle block">
+      </div>
+      <div class="subtitle block">
+        <div class="container">
           <h3>Перевод без посредников по разумной цене</h3>
           <h4>
             <br />
@@ -80,8 +180,11 @@
             английский - русский - английский<br />
             финский - английский - финский
           </h4>
+
         </div>
-        <div class="accordeon block">
+      </div>
+      <div class="accordeon block">
+        <div class="container">
           <div class="accordeon__item">
             <details class="accordeon__body">
               <summary class="accordeon__title">
@@ -137,8 +240,12 @@
               </section>
             </details>
           </div>
+
+
         </div>
-        <div class="text block">
+      </div>
+      <div class="text block">
+        <div class="container">
           <p>
             Делаем письменные переводы официальных документов, общих и
             специальных текстов, а также устные последовательные и синхронные
@@ -164,126 +271,75 @@
             <br />
             <br />
           </div>
+
+
         </div>
-        <div class="footer block">
-          <footer class="container">
+      </div>
+
+      <div class="footer block">
+        <div class="container">
+          <footer class="footer__container">
             <div class="footer__row">
-              <section class="footer__items">
-                <div class="hamburger item tooltip">
-                  <input class="menu__input" type="checkbox" id="menu__input" />
-                  <label class="menu__label" for="menu__input">
-                    <div class="hamburger__button">
-                      <span class="menu__label-line"></span>
-                    </div>
-                  </label>
-
-                  <nav class="nav__menu">
-                    <div class="nav__container">
-
-                      <div class="nav__item item1">
-                        <div class="nav__home">
-                          <a class="link" href="">
-                            <svg width="44" height="43" class= "link" viewBox="0 0 44 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M36.8694 16.6871L22.7248 1.88155C22.331 1.46926 21.6726 1.46926 21.2787 1.88155L7.13412 16.6871V40.1247C7.13412 40.677 7.58183 41.1247 8.13412 41.1247H16.7912C17.3435 41.1247 17.7912 40.677 17.7912 40.1247V27.9191C17.7912 27.3668 18.239 26.9191 18.7912 26.9191H25.3877C25.94 26.9191 26.3877 27.3668 26.3877 27.9191V40.1247C26.3877 40.677 26.8354 41.1247 27.3877 41.1247H35.8694C36.4217 41.1247 36.8694 40.677 36.8694 40.1247V16.6871Z" fill="white"/>
-                              <path d="M2.00177 22.0593L7.13412 16.6871M42.0018 22.0593L36.8694 16.6871M36.8694 16.6871L22.7248 1.88155C22.331 1.46926 21.6726 1.46926 21.2787 1.88155L7.13412 16.6871M36.8694 16.6871V40.1247C36.8694 40.677 36.4217 41.1247 35.8694 41.1247H27.3877C26.8355 41.1247 26.3877 40.677 26.3877 40.1247V27.9191C26.3877 27.3668 25.94 26.9191 25.3877 26.9191H18.7912C18.239 26.9191 17.7912 27.3668 17.7912 27.9191V40.1247C17.7912 40.677 17.3435 41.1247 16.7912 41.1247H8.13412C7.58183 41.1247 7.13412 40.677 7.13412 40.1247V16.6871" stroke="#002F6C" stroke-width="3"/>
-                              </svg>
-                              
-                          </a>
-                        </div>
-                       
-                      </div>
-                      <div class="nav__item item2">
-                        <a class="link" href=""><span class="short">Письменный</span><span class="long">Письменный перевод</span></a>
-                        <input type="checkbox" id="checkbox1" />
-                        <label for="checkbox1"> <span class="label-symbol">
-                          &#8249
-                        </span>  </label>
-                        <ul>
-                          <li><a class="link"  href="">Перевод документов</a></li>
-                          <li><a class="link" href="">Заверенный перевод</a></li>
-                          <li><a class="link"  href="">Тематика перевода</a></li>
-                          <li><a class="link" href="">Срочный перевод</a></li>
-                        </ul>
-                      </div>
-                      <div class="nav__item item3">
-                        <a class="link" href=""><span class="short">Устный</span><span class="long">Устный перевод</span></a>
-                        <input type="checkbox" id="checkbox2" />
-                        <label for="checkbox2"> <span class="label-symbol">
-                          &#8249
-                        </span>  </label>
-                        <ul>
-                          <li><a class="link"  href="">Последовательный перевод</a></li>
-                          <li><a class="link" href="">Дистанционный перевод</a></li>
-                          <li><a class="link" href="">Синхронный перевод</a></li>
-                        </ul>
-                      </div>
-                      <div class="nav__item item4">
-                        <a class="link" href="">Цена</a>
-                      </div>
-                      <div class="nav__item item5">
-                        <a class="link" href="">Контакты</a>
-                      </div>
-                      <div class="nav__item item6">
-                        <a class="link" href=""><span class="short">Бюро</span><span class="long">Бюро финских переводов</span></a>
-                        <input type="checkbox" id="checkbox3" />
-                        <label for="checkbox3"> <span class="label-symbol">
-                          &#8249
-                        </span>  </label>
-                        <ul>
-                          <li><a class="link"  href="">Языки перевода</a></li>
-                          <li><a class="link" href="">Резюме переводчика</a></li>
-                          <li><a class="link"  href="">Клиенты</a></li>
-                          <li><a class="link" href="">Часто задаваемые вопросы</a></li>
-                          <li><a class="link"  href="">О финском языке</a></li>
-                          <li><a class="link" href="">Обучение финскому языку</a></li>
-                          <li><a class="link" href="">Карта сайта</a></li>
-                        </ul>
-                      </div>
-                      <div class="nav__item item7">
-                        <div class="nav__contacts">
-                          <p class="header__phone">
-                            <a href="tel:+79117770297" class="link"> +7 911 777 0297</a>
-                          </p>
-                          <p class="header__email">
-                            <a href="mailto:grigori@konopelko.com" class="link">
-                              grigori@konopelko.com</a
-                            >
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </nav>
+              <button class="write footer__item data-text" data-text="grigori@konopelko.com">
+                <a
+                  href="mailto:grigori@konopelko.com"
+                  class="link button__write"
+                >
+                  <img
+                    src=".\src\images\mail.svg"
+                    alt="grigori@konopelko.com"
+                    class="mail__icon"
+                /></a>
+              </button>
+              <button class="call footer__item data-text" data-text="+7 911 777 0297">
+                <a href="tel:+79117770297" class="link button__call">
+                  <img
+                    src=".\src\images\phone.svg"
+                    alt="+7 911 777 0297"
+                    class="phone__icon"
+                /></a>
+              </button>
+              <div class="languages">
+                <button class="language__button footer__item"> <span> RU </span></button>
+                <div class="language__content link">
+                  <a class="link rus" href=""> RU &nbsp
+                    <svg xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-ru" viewBox="0 0 640 480">
+                      <g fill-rule="evenodd" stroke-width="1pt">
+                        <path fill="#fff" d="M0 0h640v480H0z"/>
+                        <path fill="#0039a6" d="M0 160h640v320H0z"/>
+                        <path fill="#d52b1e" d="M0 320h640v160H0z"/>
+                      </g>
+                    </svg>
+    
+                      
+                  </a>
+                  <a class="link fin" href=""> FI &nbsp
+                    <svg xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-fi" viewBox="0 0 640 480">
+                      <path fill="#fff" d="M0 0h640v480H0z"/>
+                      <path fill="#003580" d="M0 174.5h640v131H0z"/>
+                      <path fill="#003580" d="M175.5 0h130.9v480h-131z"/>
+                    </svg>
+    
+                      
+                  </a>
+                  <a class="link eng" href=""> EN &nbsp
+    <svg xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-gb" viewBox="0 0 640 480">
+      <path fill="#012169" d="M0 0h640v480H0z"/>
+      <path fill="#FFF" d="M75 0l244 181L562 0h78v62L400 241l240 178v61h-80L320 301 81 480H0v-60l239-178L0 64V0h75z"/>
+      <path fill="#C8102E" d="M424 281l216 159v40L369 281h55zm-184 20l6 35L54 480H0l240-179zM640 0v3L391 191l2-44L590 0h50zM0 0l239 176h-60L0 42V0z"/>
+      <path fill="#FFF" d="M241 0v480h160V0H241zM0 160v160h640V160H0z"/>
+      <path fill="#C8102E" d="M0 193v96h640v-96H0zM273 0v480h96V0h-96z"/>
+    </svg>
+                      
+                  </a>
                 </div>
-                <button class="write item tooltip">
-                  <a
-                    href="mailto:grigori@konopelko.com"
-                    class="link button__write"
-                  >
-                    <img
-                      src=".\src\images\mail.svg"
-                      alt="grigori@konopelko.com"
-                      class="mail__icon"
-                  /></a>
-                </button>
-                <button class="call item tooltip">
-                  <a href="tel:+79117770297" class="link button__call">
-                    <img
-                      src=".\src\images\phone.svg"
-                      alt="+7 911 777 0297"
-                      class="phone__icon"
-                  /></a>
-                </button>
-                <button class="language item tooltip">
-                  <select name="select" class="button button__language">
-                    <!--Supplement an id here instead of using 'name'-->
-                    <option value="value1" selected>ru</option>
-                    <option value="value2">fi</option>
-                    <option value="value3">en</option>
-                  </select>
-                </button>
-              </section>
+              
+              </div>
+           
+            
             </div>
           </footer>
+
         </div>
       </div>
     </div>
