@@ -64,9 +64,9 @@ img {
 /* ********* */
 
 :root {
-  --fblue: rgba(0, 47, 108, 1);
-  --rred: rgba(213, 43, 30, 1);
-  --rblue: rgba(0, 57, 166, 1);
+  --fblue: #002F6C;
+  --rred: rgb(213, 43, 30);
+  --rblue:#00459E;
   --white: rgba(255, 255, 255, 1);
 }
 
@@ -121,25 +121,8 @@ h6 {
   max-width: 44rem;
   margin: 0 auto;
   padding: 0 0.5rem;
+  width: 100%;
 }
-
-.block {
-  opacity: 0.9;
-}
-
-.block:hover {
-  opacity: 1;
-}
-
-.menu {
-  order: 2;
-  position: fixed;
-  bottom: 0;
-  @media screen and (min-width: 42rem) {
-   order: 0;
-   position: initial;
-  }
- }
 
 
 /* ********* */
@@ -153,31 +136,26 @@ a:visited {
 
 .header a,
 .header a:visited,
-.footer a,
-.footer a:visited,
 .menu a {
   color: var(--white);
+}
+
+.footer a,
+.footer a:visited {
+  color: var(--rblue);
+  @media screen and (min-width: 42rem) {
+    color: var(--white);
+  }
 }
 
 a:hover,
 .header a:hover,
 .footer a:hover
  {
-  color: var(--rred);
-}
-
-svg:hover path {
-  stroke:var(--rred);
-}
-
-svg:hover rect {
-  stroke:var(--rred);
+  opacity: 0.7;
 }
 
 /* links */
-
-/* ********* */
-
 
  /*----------Header--------------*/
 .header {
@@ -186,41 +164,43 @@ svg:hover rect {
   top: 0;
   z-index: 10;
   background-color: var(--rblue);
-  color: var(--white);
 }
 
 .header__container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content:center;
   height: 3.5rem;
-  @media screen and (min-width: 42rem) {
-     justify-content: space-between;
+  @media screen and (min-width: 31rem) {
+    justify-content:space-between;
   }
-  
+  @media screen and (min-width: 42rem) {
+     justify-content: space-around;
+  }
 }
 
 .language {
-  display: flex;
-  background-color: var(--rblue);
   height: 1.5rem;
-  width: 7rem;
   align-items: center;
   justify-content: center;
-  margin-left: 0.5rem;
   gap: 0.1rem;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+  display: none;
+  @media screen and (min-width: 42rem) {
+    display: flex;
+  }
 }
 
 .language .nonactive {
   text-align: center;
-  border: solid var(--fblue) 1px;
+  border: solid var(--rblue) 1px;
   border-radius: 0.2rem;
   line-height: 1.5rem;
   padding: 0 0.4rem;
   opacity: 0.8;
   font-weight: 300;
   cursor: pointer;
+
 }
 
 .language .active {
@@ -232,7 +212,6 @@ svg:hover rect {
   opacity: 1;
   font-weight: normal;
   cursor: auto;
-  color: var(--white) !important;
 }
 
 .language .nonactive:hover {
@@ -245,25 +224,19 @@ svg:hover rect {
   font-weight: normal;
 }
 
- .languages {
-    position: fixed;
-    bottom: 1rem;
-    right: 7%;
-  @media screen and (min-width: 42rem) {
-    position: initial;
-    display: flex;
-    padding-left: 1rem;
-
-    display: none;
-  }
-    
-  }
 
 select {
   color: var(--white);
   background-color: var(--rblue);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   cursor: pointer;
+  @media screen and (min-width: 42rem) {
+    display: none;
+  }
+}
+
+select:hover {
+  opacity: 0.7;
 }
 
 
@@ -275,6 +248,11 @@ select {
   @media screen and (min-width: 42rem) {
     padding: 0 1rem;
   }
+}
+
+.parrot:hover {
+  cursor: initial;
+  opacity: 1 !important;
 }
 
 .img {
@@ -289,7 +267,6 @@ select {
   padding-left: 0.5rem;
   font-size: 1rem;
   line-height: 1rem;
-  color: var(--fblue);
   }
 
 .logo__title a span {
@@ -301,23 +278,18 @@ select {
  
 
 .contacts{
-  position: fixed;
-  bottom: 0.5rem;
-  right: 30%;
-  display: flex;
   cursor: pointer;
   justify-content: space-between;
   align-items: space-between;
-  width: 30%;
-
-  @media screen and (min-width: 42rem) {
+   @media screen and (min-width: 42rem) {
   position: initial;
-  display: flex;
+
+  display: none;
+
   cursor: pointer;
   justify-content: center;
   align-items: center;
   width:initial;
-  margin-right: 4rem;
   }
   
 }
@@ -334,34 +306,62 @@ select {
   width: 1.5rem;
 }
 
-/*----------Header--------------*/
+.header__contacts {
+  line-height: 1.1rem;
+  display: none;
+  @media screen and (min-width: 31rem) {
+    display: block;
+  }
+}
 
+.header__mail {
+  font-size: 0.8rem;
+}
+
+/*----------Header--------------*/
 
 /* Menu */
 
 .menu {
+  order: 2;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   z-index: 50;
   transition: all 0.4s ease;
   width: 100%;
   height: 3rem;  
+  /* color: var(--white); */
   background-color: var(--rblue); 
-  color: var(--white);
   opacity: 1;
   @media screen and (min-width: 42rem) {
-    z-index: 40;
-    opacity: 0.9;
-    position: absolute;
-    top: -200%;
+    order: 0;
+    position: initial;
+    background-color:var(--white);
+    height: 2.5rem;
+   }
+}
+
+.menu__wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  @media screen and (min-width: 31rem) {
+    justify-content: space-around;
   }
+  height: 2.5rem;
+  width: 100%;
+  border-bottom: solid 1px;
+  border-color: var(--rblue);
 }
 
 .menu__container {
-  padding: 1rem 0.5rem;
-  height: 100%;
-}
-
-.home a svg{
-  height: 1.2rem;
+  @media screen and (min-width: 42rem) {
+  width: 100%;
+  }
 }
 
 
@@ -370,8 +370,8 @@ select {
   bottom: 3rem;
   transition: all 0.5s ease-out;
   width: 100%;
-  background-color: var(--rblue);
-  padding-top: 3rem;
+  /* background-color: var(--rblue); */
+  /* padding-top: 3rem; */
 }
 
 .menu__input:checked ~ .menu__label .hamburger__button .menu__label-line {
@@ -401,16 +401,16 @@ select {
   align-items: center;
   justify-content: center;
   display: flex;
-  position: fixed;
-  bottom: 1.5rem;
-  left: 7%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
   @media screen and (min-width: 42rem) {
-    bottom:auto;
-    left:auto;
-    top: 1.7rem;
-    right: 1.7rem;
-    z-index: 99;
+ display: none;
   }
+}
+
+.hamburger__button:hover {
+  opacity: 0.7;
 }
 
 .menu__label {
@@ -450,12 +450,12 @@ select {
 .menu__list {
     align-items: center;
     justify-content: space-around;
-    
     display: flex;
     flex-direction: column;
     position: fixed;
     left:0;
     bottom: -100rem;
+    background-color: var(--white);
     @media screen and (min-width: 42rem) {
       display: flex;
       flex-direction: row;
@@ -472,16 +472,23 @@ select {
 input {
   display: none;
 }
+
+.home a svg{
+  height: 1.8rem;
+  @media screen and (min-width: 42rem) {
+    height: 1.2rem;
+  }
+} 
+
 .menu__item a {
   background-color: var(--white);
   color: var(--rblue);
-
-  background-color: var(--rblue);
-  color: var(--white);
-}
-
-.menu__item a:hover {
-  color: var(--rred);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  @media screen and (min-width: 42rem) {
+    font-size: 0.9rem;
+  }
 }
 
 /* Menu  */
@@ -489,22 +496,31 @@ input {
 /* Main  */
 .main__container {
   padding: 2rem 0.5rem;
+  word-wrap: break-word;
 }
 
 .promo {
   padding: 0 0 2rem 0;
 }
 
+.location__icon {
+ height: 1.1rem;
+}
+
 .text {
   text-align: justify;
-  padding: 2rem 1rem;
+  /* padding: 1rem  0.5rem; */
+  @media screen and (min-width: 42rem) {
+    padding: 2rem  1rem;
+  }
   text-indent: 1.5rem;
 }
 
 .text p::first-letter {
-  font-size: 120%;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 110%;
   color: var(--rred);
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .center {
@@ -515,30 +531,38 @@ input {
 /* Footer  */
 
 .footer {
-  display: none;
-  bottom:0;
+  margin-bottom: 4rem;
+  padding: 0.5rem;
   width:100%;
   left:0;
-  background-color: var(--rblue);
-  color: var(--white);
+  font-size: 0.9rem;
+  background-color: var(--white);
+  color: var(--rblue);
+  text-align: left;
   @media screen and (min-width: 42rem) {
-    z-index: 0;
-    display: flex;
+    margin-bottom: 0;
+    background-color: var(--rblue);
+  color: var(--white);
+  }
+}
+
+.footer a {
+  color: var(--rblue);
+  @media screen and (min-width: 42rem) {
+  color: var(--white);
   }
 }
 
 .footer__container {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
-  height: 3rem;
+  justify-content: center; */
 }
 
 .order {
-  display: none;
-  @media screen and (min-width: 42rem) {
-    display: flex;
-  }
+  border-top: 1px solid var(--rblue);
+  text-align: justify;
+  letter-spacing: 0.2px;
 }
 
 
