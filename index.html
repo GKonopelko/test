@@ -1,356 +1,212 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Качественные переводы с русского на финский и с финского на русский язык напрямую от переводчика.">
+
+    <meta name="keywords" content="финский, перевод">
+
     <title>Бюро финских переводов Григория Конопелько</title>
-    <link href="style.css" rel="stylesheet" />
-    <link
-      rel="icon"
-      type="image/png"
-      href=".\src\images\parrot-with-flags.png"
-    />
+
+    <link href="style0816.css" rel="stylesheet">
+    <link rel="icon" href=".\src\images\Parrotsvg.svg">
+
   </head>
   <body class="body">
-    <div class="header block">
-      <div class="wrapper">
-        <div class="container">
-          <header class="header__row">
-            <div class="header__logo">
-              <img class="img" src=".\src\images\parrotsvg.svg" alt="logo" />
+    <div class="wrapper">
+      <header class="header block">
+      <div class="header__container _container">
+        <div class="language">
+          <a href="#" class="fi nonactive">FI</a>
+          <a href="#" class="ru active">RU</a>
+          <a href="#" class="en nonactive">EN</a>
+        </div>
+        <div class="logo"> 
+            <a class='parrot' href="#"> 
+              <div class="img">
+                <img src=".\src\images\parrotsvg.svg" alt="logo" />
+              </div>
+            </a>
+            <div class="logo__title">
+              <a href="#">
+               Бюро финских переводов <br> 
+              <span>Григория Конопелько</span></a>
             </div>
-            <div class="header__title">
-              <p class="header__main-title">Бюро финских переводов</p>
-              <p class="header__subtitle">Григория Конопелько</p>
-            </div>
-            <div class="header__contacts">
-              <p class="header__phone">
-                <a href="tel:+79117770297" class="link"> +7 911 777 0297</a>
-              </p>
-              <p class="header__email">
-                <a href="mailto:grigori@konopelko.com" class="link">
-                  grigori@konopelko.com</a
-                >
-              </p>
-            </div>
-          </header>
+        </div>
+        <div class="header__contacts">
+          <div class="header__phone">
+            <a href="tel:+79117770297" class="phone">+7 911 777 02 97 </a>
+          </div>
+          <div class="header__mail">
+            <a href="mailto:grigori@konopelko.com" class="mail"> grigori@konopelko.com
+              </a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="menu block">
-      <div class="wrapper">
-        <div class="container">
-          <input class="menu__input" type="checkbox" id="menu__input" />
-          <label class="menu__label"  for="menu__input">
-            <div class="hamburger__button footer__item">
-              <span class="menu__label-line" id="sidebar"></span>
-            </div>
-          </label>
-          <nav class="nav__menu">
-            <div class="nav__container">
-              <div class="nav__item item1">
-                <div class="nav__home">
-                  <a class="link" href="">
-                    <svg width="31" height="31" class= "link" viewBox="0 0 44 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M36.8694 16.6871L22.7248 1.88155C22.331 1.46926 21.6726 1.46926 21.2787 1.88155L7.13412 16.6871V40.1247C7.13412 40.677 7.58183 41.1247 8.13412 41.1247H16.7912C17.3435 41.1247 17.7912 40.677 17.7912 40.1247V27.9191C17.7912 27.3668 18.239 26.9191 18.7912 26.9191H25.3877C25.94 26.9191 26.3877 27.3668 26.3877 27.9191V40.1247C26.3877 40.677 26.8354 41.1247 27.3877 41.1247H35.8694C36.4217 41.1247 36.8694 40.677 36.8694 40.1247V16.6871Z" fill="white"/>
-                      <path d="M2.00177 22.0593L7.13412 16.6871M42.0018 22.0593L36.8694 16.6871M36.8694 16.6871L22.7248 1.88155C22.331 1.46926 21.6726 1.46926 21.2787 1.88155L7.13412 16.6871M36.8694 16.6871V40.1247C36.8694 40.677 36.4217 41.1247 35.8694 41.1247H27.3877C26.8355 41.1247 26.3877 40.677 26.3877 40.1247V27.9191C26.3877 27.3668 25.94 26.9191 25.3877 26.9191H18.7912C18.239 26.9191 17.7912 27.3668 17.7912 27.9191V40.1247C17.7912 40.677 17.3435 41.1247 16.7912 41.1247H8.13412C7.58183 41.1247 7.13412 40.677 7.13412 40.1247V16.6871" stroke="#002F6C" stroke-width="3"/>
-                      </svg>
-                  </a>
-                </div>                        
+      </header>
+      <nav class="menu block">
+        <div class="menu__wrapper _container">
+          <div class="menu__container">
+            <input class="menu__input" type="checkbox" id="menu__input" />
+            <label class="menu__label"  for="menu__input">
+              <div class="hamburger__button">
+                <span class="menu__label-line" id="sidebar"></span>
               </div>
-              <div class="nav__item item2">
-                <a class="link" href=""><span class="short">Письменный</span><span class="long">Письменный перевод</span></a>
-                <input type="checkbox" id="checkbox1" />
-                <label for="checkbox1"> <span class="label-symbol">
-                  &#8249
-                </span>  </label>
-                <ul>
-                  <li><a class="link"  href="">Перевод документов</a></li>
-                  <li><a class="link" href="">Заверенный перевод</a></li>
-                  <li><a class="link"  href="">Тематика перевода</a></li>
-                  <li><a class="link" href="">Срочный перевод</a></li>
-                </ul>
-              </div>
-              <div class="nav__item item3">
-                <a class="link" href=""><span class="short">Устный</span><span class="long">Устный перевод</span></a>
-                <input type="checkbox" id="checkbox2" />
-                <label for="checkbox2"> <span class="label-symbol">
-                  &#8249
-                </span>  </label>
-                <ul>
-                  <li><a class="link"  href="">Последовательный перевод</a></li>
-                  <li><a class="link" href="">Дистанционный перевод</a></li>
-                  <li><a class="link" href="">Синхронный перевод</a></li>
-                </ul>
-              </div>
-              <div class="nav__item item4">
-                <a class="link" href="">Цена</a>
-              </div>
-              <div class="nav__item item5">
-                <a class="link" href="">Контакты</a>
-              </div>
-              <div class="nav__item item6">
-                <a class="link" href=""><span class="short">Бюро</span><span class="long">Бюро финских переводов</span></a>
-                <input type="checkbox" id="checkbox3" />
-                <label for="checkbox3"> <span class="label-symbol">
-                  &#8249
-                </span>  </label>
-                <ul>
-                  <li><a class="link"  href="">Языки перевода</a></li>
-                  <li><a class="link" href="">Резюме переводчика</a></li>
-                  <li><a class="link"  href="">Клиенты</a></li>
-                  <li><a class="link" href="">Часто задаваемые вопросы</a></li>
-                  <li><a class="link"  href="">О финском языке</a></li>
-                  <li><a class="link" href="">Обучение финскому языку</a></li>
-                  <li><a class="link" href="">Карта сайта</a></li>
-                </ul>
-              </div>
-              <div class="nav__item item7">
-                <div class="nav__contacts">
-                  <p class="header__phone">
-                    <a href="tel:+79117770297" class="link"> +7 911 777 0297</a>
-                  </p>
-                  <p class="header__email">
-                    <a href="mailto:grigori@konopelko.com" class="link">
-                      grigori@konopelko.com</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-          </nav>
-  
+            </label>
+            <ul class="menu__list">
+              <li class="menu__item home">
+                <a href="#" class="menu__link link">     <svg width="44" height="43" viewBox="0 0 44 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.96295 22.2193L7.0953 16.8471M41.963 22.2193L36.8306 16.8471M36.8306 16.8471L22.686 2.04152C22.2921 1.62923 21.6338 1.62923 21.2399 2.04152L7.0953 16.8471M36.8306 16.8471V40.2847C36.8306 40.837 36.3829 41.2847 35.8306 41.2847H27.3489C26.7966 41.2847 26.3489 40.837 26.3489 40.2847V28.0791C26.3489 27.5268 25.9012 27.0791 25.3489 27.0791H18.7524C18.2001 27.0791 17.7524 27.5268 17.7524 28.0791V40.2847C17.7524 40.837 17.3047 41.2847 16.7524 41.2847H8.0953C7.54301 41.2847 7.0953 40.837 7.0953 40.2847V16.8471" stroke="#00459E" stroke-width="3"/>
+                  </svg> </a>
+              </li>
+              <li class="menu__item interpreting">
+                <a href="#" class="menu__link link"> Письменный</a>
+              </li>
+              <li class="menu__item translation">
+                <a href="#" class="menu__link link"> 
+                  Устный
+                </a>
+              </li>
+              <li class="menu__item price">
+                <a href="#" class="menu__link link"> Цена </a>
+              </li>
+              <li class="menu__item questions">
+                <a href="#" class="menu__link link"> Вопросы </a>
+              </li>
+              <li class="menu__item contact">
+                <a href="#" class="menu__link link"> Контакты </a>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts">
+            <a href="tel:+79117770297" class="phone">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.7768 11.0625L10.9518 4.68121C10.1933 2.96763 8.5268 1.36241 6.68351 1.70018C6.46666 1.73992 6.23189 1.80113 5.96868 1.89032C4.4472 2.40593 3.33587 3.96182 2.42371 6.08286C-3.26094 19.2545 21.2252 41.0335 31.3622 37.1903C34.3141 36.2988 35.4946 35.4489 36.9054 33.1425C37.2817 32.3455 37.4858 31.6693 37.5532 30.8863C37.6943 29.2471 36.5434 27.8198 35.0781 27.0716L31.6965 25.3448C29.8939 24.4243 27.6918 24.9135 26.4485 26.5105C25.1967 28.1184 22.96 28.6258 21.2029 27.594C17.7229 25.5506 15.1338 23.4201 12.3183 19.6345C11.1023 17.9996 11.1895 15.7802 12.3233 14.0873C13.3985 12.4818 13.9233 11.512 13.7768 11.0625Z" stroke="white" stroke-width="3"/>
+                </svg>
+              
+          </a>
+          </div>
+          <div class="contacts">
+            <a href="mailto:grigori@konopelko.com" class="mail">
+              <svg width="39" height="29" viewBox="0 0 39 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.12731 1.9109L19.1287 13.927C19.4864 14.1956 19.9786 14.1944 20.3343 13.924L35.9839 2.02919" stroke="white" stroke-width="3"/>
+                <mask id="path-2-inside-1_224_15" fill="white">
+                <rect width="38.3741" height="28.7527" rx="1" transform="matrix(0.999999 0.0012852 -0.000866617 1 0.351929 0.0872803)"/>
+                </mask>
+                <rect width="38.3741" height="28.7527" rx="1" transform="matrix(0.999999 0.0012852 -0.000866617 1 0.351929 0.0872803)" stroke="white" stroke-width="6" mask="url(#path-2-inside-1_224_15)"/>
+                </svg>
+              
+            </a>
+          </div>
+          <div class="languages">
+            <form>
+              <select>
+                <option disabled> <a href="#" class="russian"> RU</option>
+                <option><a href="#" class="finnish">FI</a></option>
+                <option><a href="#" class="english">EN</option>
+              </select>
+            </form>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="breadcrumbs block">
-      <div class="wrapper">
-        <div class="container">
-          <ul class="breadcrumb">
-            <li class="breadcrumb__item">
-              <a class="link" href="#">Бюро финских переводов</a>
-            </li>
-            <li class="breadcrumb__item">
-              <a class="link" href="#">Письменный</a>
-            </li>
-            <li class="breadcrumb__item">
-              <a class="link" href="#">Перевод документов</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="title block">
-      <div class="wrapper">
-        <div class="container">
-          <h1 class="article__title">
-            Качественный перевод <br />
-            на финский язык и <br />
-            с финского языка
-          </h1>
-        </div>
-      </div>
-    </div>
-    <div class="promo block">
-      <div class="wrapper">
-        <div class="container">
-  
-          <h4 class="promo__text">
-            письменный от 4 руб/слово
-            <br />
-            устный от 1700 руб/час <br />
-            <a href="#" class="location__link">
-              <img
+        
+      </nav>
+      <main class="main block">
+      <div class="main__container _container">
+        <section class="promo">
+          <h3>Перевод без посредников по разумной цене</h3> <br>
+              <h4 class="langlist">
+                финский - русский - финский<br>
+                английский - русский - английский<br>
+                финский - английский - финский<br>
+                <br>
+                <a href="#" class="interpreting">письменный</a>
+                 от 4 руб/слово<br>
+                 <a href="#" class="translation">устный</a> от 1700 руб/час <br>
+                  <a href="#" class="location__link">
+                  <img
                 src=".\src\images\location-icon.svg"
                 alt="location icon"
-                class="location__icon"
-              />
-              <span class="location__text">Санкт-Петербург</span>
-              <br />
-            </a>
-          </h4>
-  
-        </div>
+                class="location__icon">
+                    <span class="location__text">Санкт-Петербург</span>
+                  </a>
+              </h4>
+        </section>
+        <article class="main__article article"> 
+          <h1 class="article__title">
+            Качественный перевод на финский язык и с финского языка
+          </h1>
+          <section class="text">
+            <p>
+              Делаем письменные переводы официальных документов, общих и
+              специальных текстов, а также устные последовательные и синхронные
+              переводы.
+            </p>
+            <p>
+              Предлагаем клиентам индивидуальный подход и комплексное
+              лингвистическое обслуживание.
+            </p>
+            <p>
+              Специализация на финском и английском языках, большой опыт устных и
+              письменных переводов, использование современных словарей и
+              специализированных переводческих программ гарантируют наилучшее
+              соотношение качества и стоимости перевода.
+            </p>
+            <p>
+              Мы стремимся гибко подстраиваться под потребности и запросы клиента,
+              но без ущерба для качества перевода.
+            </p>
+            <br>
+            <p class="center">Давайте работать вместе!</p>
+          </section>
+        </article>
       </div>
-    </div>
-    <div class="subtitle block">
-      <div class="wrapper">
-        <div class="container">
-          <h3>Перевод без посредников по разумной цене</h3>
-          <h4>
-            <br />
-            финский - русский - финский<br />
-            английский - русский - английский<br />
-            финский - английский - финский
-          </h4>
-  
+      </main>
+      <footer class="footer block">
+      <div class="footer__container _container"> 
+        <div class="order"> 
+          <p>Для оценки стоимости и сроков письменного перевода вышлите файл/скан/фото по электронной почте &nbsp <a href="mailto:grigori@konopelko.com" class="mail"> grigori@konopelko.com &nbsp
+          </a>  или &nbsp
+          <a href="tg://resolve?domain=https://t.me/GrigoriKonopelko">Telegram</a> &nbsp
+          <a href="whatsapp://send?phone=+79117770297">WhatsApp</a>.
+             
+          </p>
         </div>
+        <br>
+
+        <ul class="footer__menu">
+          <li class="footer__item home">
+            <a href="#" class="menu__link link"> &#11166 Бюро финских переводов Григория Конопелько </a>
+          </li>
+          <li class="footer__item interpreting">
+            <a href="#" class="menu__link link"> &#11166 Письменный перевод на финский язык и с финского языка</a>
+          </li>
+          <li class="footer__item translation">
+            <a href="#" class="menu__link link"> 
+              &#11166 Устный перевод на финский язык и с финского языка
+            </a>
+          </li>
+          <li class="footer__item price">
+            <a href="#" class="menu__link link"> &#11166 Цена перевода на финский язык / с финского языка </a>
+          </li>
+          <li class="footer__item questions">
+            <a href="#" class="menu__link link"> &#11166 Вопросы о переводе на финский язык / с финского языка </a>
+          </li>
+          <li class="footer__item notes">
+            <a href="#" class="menu__link link"> &#11166 Заметки о финском языке </a>
+          </li>
+          <li class="footer__item map">
+            <a href="#" class="menu__link link"> &#11166 Карта сайта </a>
+          </li>
+        </ul>
+
+        <br>
+        <p> © "Бюро финских переводов Григория Конопелько", 2012-2023</p>
 
       </div>
-    </div>
-    <div class="accordeon block">
-      <div class="wrapper">
-        <div class="container">
-          <div class="accordeon__item">
-            <details class="accordeon__body">
-              <summary class="accordeon__title">
-                <h2>Письменный</h2>
-              </summary>
-              <section class="accordeon__text">
-                <p>
-                  Оперативный качественный перевод с русского языка на финский и
-                  с финского языка на русский напрямую от профессионального
-                  переводчика.
-                </p>
-                <div class="accordeon__button">
-                  <a href="#" class="button__big link">
-                    <p class="button__text">Подробнее</p>
-                  </a>
-                </div>
-              </section>
-            </details>
-          </div>
-          <div class="accordeon__item">
-            <details class="accordeon__body">
-              <summary class="accordeon__title">
-                <h2>Устный</h2>
-              </summary>
-              <section class="accordeon__text">
-                <p>
-                  Профессиональный устный перевод с русского языка на финский и
-                  с финского языка на русский напрямую от опытного переводчика.
-                </p>
-                <div class="accordeon__button">
-                  <a href="#" class="button__big link">
-                    <p class="button__text">Подробнее</p>
-                  </a>
-                </div>
-              </section>
-            </details>
-          </div>
-          <div class="accordeon__item">
-            <details class="accordeon__body">
-              <summary class="accordeon__title">
-                <h2>Цены</h2>
-              </summary>
-              <section class="accordeon__text">
-                <p>
-                  Качественный перевод без посредников: <br />
-                  -письменный от 4 руб/слово <br />-устный от 1700 руб/час
-                </p>
-                <div class="accordeon__button">
-                  <a href="#" class="button__big link">
-                    <p class="button__text">Подробнее</p>
-                  </a>
-                </div>
-              </section>
-            </details>
-          </div>
-  
-  
-        </div> 
-      </div>
-    </div>
-    <div class="text block">
-      <div class="wrapper">
-        <div class="container">
-          <p>
-            Делаем письменные переводы официальных документов, общих и
-            специальных текстов, а также устные последовательные и синхронные
-            переводы.
-          </p>
-          <p>
-            Предлагаем клиентам индивидуальный подход и комплексное
-            лингвистическое обслуживание.
-          </p>
-          <p>
-            Специализация на финском и английском языках, большой опыт устных и
-            письменных переводов, использование современных словарей и
-            специализированных переводческих программ гарантируют наилучшее
-            соотношение качества и стоимости перевода.
-          </p>
-          <p>
-            Мы стремимся гибко подстраиваться под потребности и запросы клиента,
-            но без ущерба для качества перевода.
-          </p>
-          <div class="subtitle">
-            <br />
-            <p>Давайте работать вместе!</p>
-            <br />
-            <br />
-          </div>
-  
-  
-        </div>
-      </div>
-    </div>
-    <div class="footer block">
-      <div class="wrapper">
-        <div class="container">
-          <footer class="footer__container">
-            <div class="footer__row">
-              <button class="write footer__item data-text" data-text="grigori@konopelko.com">
-                <a
-                  href="mailto:grigori@konopelko.com"
-                  class="link button__write"
-                >
-                  <img
-                    src=".\src\images\mail.svg"
-                    alt="grigori@konopelko.com"
-                    class="mail__icon"
-                /></a>
-              </button>
-              <button class="call footer__item data-text" data-text="+7 911 777 0297">
-                <a href="tel:+79117770297" class="link button__call">
-                  <img
-                    src=".\src\images\phone.svg"
-                    alt="+7 911 777 0297"
-                    class="phone__icon"
-                /></a>
-              </button>
-              <div class="languages">
-                <button class="language__button footer__item"> <span> RU </span></button>
-                <div class="language__content link">
-                  <a class="link rus" href=""> RU &nbsp
-                    <svg xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-ru" viewBox="0 0 640 480">
-                      <g fill-rule="evenodd" stroke-width="1pt">
-                        <path fill="#fff" d="M0 0h640v480H0z"/>
-                        <path fill="#0039a6" d="M0 160h640v320H0z"/>
-                        <path fill="#d52b1e" d="M0 320h640v160H0z"/>
-                      </g>
-                    </svg>
-    
-                      
-                  </a>
-                  <a class="link fin" href=""> FI &nbsp
-                    <svg xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-fi" viewBox="0 0 640 480">
-                      <path fill="#fff" d="M0 0h640v480H0z"/>
-                      <path fill="#003580" d="M0 174.5h640v131H0z"/>
-                      <path fill="#003580" d="M175.5 0h130.9v480h-131z"/>
-                    </svg>
-    
-                      
-                  </a>
-                  <a class="link eng" href=""> EN &nbsp
-    <svg xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-gb" viewBox="0 0 640 480">
-      <path fill="#012169" d="M0 0h640v480H0z"/>
-      <path fill="#FFF" d="M75 0l244 181L562 0h78v62L400 241l240 178v61h-80L320 301 81 480H0v-60l239-178L0 64V0h75z"/>
-      <path fill="#C8102E" d="M424 281l216 159v40L369 281h55zm-184 20l6 35L54 480H0l240-179zM640 0v3L391 191l2-44L590 0h50zM0 0l239 176h-60L0 42V0z"/>
-      <path fill="#FFF" d="M241 0v480h160V0H241zM0 160v160h640V160H0z"/>
-      <path fill="#C8102E" d="M0 193v96h640v-96H0zM273 0v480h96V0h-96z"/>
-    </svg>
-                      
-                  </a>
-                </div>
-              
-              </div>
-            </div>
-          </footer>
-  
-        </div> 
-      </div>
+      </footer>
     </div>
   </body>
 </html>
